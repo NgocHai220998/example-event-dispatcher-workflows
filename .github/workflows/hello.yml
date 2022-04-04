@@ -6,9 +6,9 @@ env:
 on:
   push:
   repository_dispatch:
-    types: [run-ping]
+    types: [run-hello]
 jobs:
-  ping:
+  hello:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
