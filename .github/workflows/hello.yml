@@ -1,8 +1,4 @@
 name: Hello Github Action
-env:
-  REPO_OWNER: NgocHai220998
-  REPO_NAME: example-event-dispatcher-workflows
-  GITHUB_TOKEN: ${{ secrets.TOKEN }}
 on:
   push:
   repository_dispatch:
