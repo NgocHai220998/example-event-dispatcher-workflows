@@ -1,0 +1,15 @@
+name: Hello Github Action
+env:
+  REPO_OWNER: NgocHai220998
+  REPO_NAME: example-event-dispatcher-workflows
+  GITHUB_TOKEN: ${{ secrets.TOKEN }}
+on:
+  repository_dispatch:
+    types: [run-ping]
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Hello World
+        run: echo "Hello GithubAction"
