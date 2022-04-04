@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ping": "node index.js ping",
-    "pong": "node index.js pong",
-    "done": "node index.js done"
+    "hello": "node index.js"
   },
   "repository": {
     "type": "git",
