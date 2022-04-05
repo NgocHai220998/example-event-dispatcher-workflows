@@ -10,5 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: install aws
+        run: sudo apt-get update
+        run: sudo apt-get install awscli
+      - name: check version aws
+        run: aws --version
+      - name: run aws
+        run: aws configure sso
       - name: Hello World
         run: echo "Hello GithubAction"
