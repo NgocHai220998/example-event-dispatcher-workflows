@@ -15,6 +15,6 @@ jobs:
       - name: check version aws
         run: aws --version
       - name: run aws
-        run: aws configure sso
+        run: aws configure sso "213123"
       - name: Hello World
         run: echo "Hello GithubAction"
