@@ -11,8 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: install aws
-        run: sudo apt-get update
-        run: sudo apt-get install awscli
+        run: sudo apt-get update && apt-get install awscli
       - name: check version aws
         run: aws --version
       - name: run aws
